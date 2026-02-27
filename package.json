@@ -1,0 +1,22 @@
+{
+ "name": "bitespeed-identity",
+ "version": "1.0.0",
+ "main": "dist/server.js",
+ "scripts": {
+  "dev": "ts-node src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+ },
+ "dependencies": {
+  "@prisma/client": "^5.19.1",
+  "dotenv": "latest",
+  "express": "latest",
+  "prisma": "^5.19.1"
+ },
+ "devDependencies": {
+  "@types/express": "latest",
+  "@types/node": "latest",
+  "ts-node": "latest",
+  "typescript": "latest"
+ }
+}
