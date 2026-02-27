@@ -1,13 +1,15 @@
-
 import express from "express";
 import identifyRoutes from "./routes/identifyRoutes";
 
-const app=express();
+const app = express();
 
 app.use(express.json());
 
-app.use("/",identifyRoutes);
+app.use("/", identifyRoutes);
 
-app.listen(3000,()=>{
- console.log("Server running on port 3000");
+// Important for Render deployment
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+ console.log(`Server running on port ${PORT}`);
 });
